@@ -183,12 +183,32 @@ input, select {
     background: #444;
 }
 
+/* Estilizando a nova planilha */
+.planilha-container {
+    margin-top: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.planilha-container p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.underline {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 /* Responsividade da tabela */
 @media (max-width: 600px) {
     table {
         width: 100%;
     }
 }
+
 
 
 /* Informações extras */
