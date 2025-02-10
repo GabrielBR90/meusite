@@ -10,7 +10,15 @@ body {
     flex-direction: column;
     min-height: 100vh;
     text-align: center;
-    background-color: #f4f4f4;
+}
+
+/* 🖥️ Estilo para DESKTOP */
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none; /* Oculto no desktop */
 }
 
 header {
@@ -27,6 +35,7 @@ main {
     padding: 20px;
 }
 
+/* Estilo do bloco de conteúdo */
 .content {
     background: white;
     padding: 20px;
@@ -56,9 +65,29 @@ footer {
     padding: 10px;
 }
 
-/* Responsividade */
+/* 📱 Estilo para MOBILE */
 @media (max-width: 600px) {
-    .content {
+    body {
+        background: #222; /* Fundo escuro no mobile */
+        color: white;
+    }
+
+    .desktop {
+        display: none; /* Oculto no mobile */
+    }
+
+    .mobile {
+        display: block; /* Exibido no mobile */
+        padding: 15px;
+        border-radius: 0;
         width: 100%;
+    }
+
+    button {
+        background: #007bff;
+    }
+
+    button:hover {
+        background: #0056b3;
     }
 }
