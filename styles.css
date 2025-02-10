@@ -192,31 +192,36 @@ input, select {
     text-align: left;
 }
 
-.planilha-container p {
-    font-size: 14px;
-    margin-top: 10px;
+/* Estilos da Tabela de Operações */
+.operation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.underline {
-    text-decoration: underline;
+.operation-table th, .operation-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.operation-table th {
+    background-color: #f4f4f4;
     font-weight: bold;
 }
 
-/* Responsividade da tabela */
+/* Ajuste para os inputs */
+.operation-table input, .operation-table select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Responsividade */
 @media (max-width: 600px) {
-    table {
-        width: 100%;
+    .operation-table {
+        font-size: 12px;
     }
 }
 
-
-
-/* Informações extras */
-.info {
-    margin-top: 20px;
-    text-align: left;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 14px;
-}
