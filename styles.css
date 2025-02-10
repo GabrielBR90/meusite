@@ -45,8 +45,9 @@ main {
     width: 90%;
 }
 
+/* 🎨 Botão Verde no Desktop */
 button {
-    background: #28a745;
+    background: #28a745; /* Verde */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -57,12 +58,6 @@ button {
 
 button:hover {
     background: #218838;
-}
-
-footer {
-    background: #333;
-    color: white;
-    padding: 10px;
 }
 
 /* 📱 Estilo para MOBILE */
@@ -83,11 +78,12 @@ footer {
         width: 100%;
     }
 
+    /* 🎨 Botão Vermelho no Mobile */
     button {
-        background: #007bff;
+        background: #dc3545; /* Vermelho */
     }
 
     button:hover {
-        background: #0056b3;
+        background: #c82333;
     }
 }
