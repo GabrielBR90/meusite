@@ -12,65 +12,16 @@ body {
     flex-direction: column;
     min-height: 100vh;
     text-align: center;
-    background-color: #f4f4f4; /* Mantendo fundo cinza claro */
+    background-color: #f4f4f4; /* Mesma cor para desktop e mobile */
+    color: #000; /* Garantindo que o texto seja sempre preto */
 }
 
 /* Cabeçalho */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
     background: #333;
     color: white;
+    padding: 15px;
 }
-
-/* Botão de voltar */
-.back-btn {
-    background: #000;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.back-btn:hover {
-    background: #444;
-}
-
-/* Estilizando a tabela */
-table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: center;
-}
-
-th {
-    background: #000;
-    color: white;
-}
-
-td {
-    background: #f4f4f4;
-}
-
-/* Responsividade */
-@media (max-width: 600px) {
-    table {
-        width: 95%;
-    }
-} 
 
 /* Estrutura do conteúdo */
 main {
@@ -82,63 +33,12 @@ main {
     padding: 20px;
 }
 
-/* Container dos botões */
-.button-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 botões por linha */
-    gap: 20px; /* Espaço maior entre os botões */
-    margin-top: 20px;
-}
-
-/* Botões quadrados com cantos arredondados */
-.square-btn {
-    background: #000; /* Preto */
-    color: white; /* Texto branco */
-    border: none;
-    font-size: 18px;
-    text-align: center;
-    border-radius: 25px; /* Cantos arredondados */
-    width: 120px; /* Largura fixa */
-    height: 120px; /* Altura fixa (quadrado) */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-/* Efeito ao passar o mouse */
-.square-btn:hover {
-    background: #444; /* Cinza escuro no hover */
-}
-
-/* 📱 Ajustando para telas menores */
-@media (max-width: 600px) {
-    .button-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 botões por linha no mobile */
-    }
-}
-
-/* Botão de voltar */
-.back-btn {
-    background: #000;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.back-btn:hover {
-    background: #444;
-}
-
-/* Estilizando a tabela */
+/* Tabelas */
 table {
     width: 90%;
     margin: 20px auto;
     border-collapse: collapse;
-    background: white;
+    background: white; /* Mantendo fundo branco */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -148,6 +48,7 @@ th, td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: center;
+    color: #000; /* Texto sempre preto */
 }
 
 th {
@@ -165,6 +66,8 @@ input, select {
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    background: white; /* Fundo sempre branco */
+    color: #000; /* Texto sempre preto */
 }
 
 /* Botão de adicionar */
@@ -180,6 +83,20 @@ input, select {
 }
 
 .add-btn:hover {
+    background: #444;
+}
+
+/* Botão de voltar */
+.back-btn {
+    background: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.back-btn:hover {
     background: #444;
 }
 
@@ -203,6 +120,7 @@ input, select {
     border: 1px solid black;
     padding: 8px;
     text-align: center;
+    color: #000; /* Texto sempre preto */
 }
 
 .operation-table th {
@@ -216,12 +134,27 @@ input, select {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background: white; /* Fundo sempre branco */
+    color: #000; /* Texto sempre preto */
 }
 
 /* Responsividade */
 @media (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+
+    /* Mobile mantém as mesmas cores */
+    body {
+        background-color: #f4f4f4; /* Mesma cor do desktop */
+    }
+
+    th, td, input, select {
+        color: #000; /* Garantindo que o texto seja preto */
+        background: white; /* Fundo sempre branco */
+    }
+
     .operation-table {
         font-size: 12px;
     }
 }
-
