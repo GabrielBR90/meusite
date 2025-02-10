@@ -13,6 +13,7 @@ function addRow() {
     newRow.innerHTML = `
         <td>
             <select class="menu-suspenso">
+                <option value="Cel PM"></option>
                 <option value="Cel PM">Cel PM</option>
                 <option value="TenCel PM">TenCel PM</option>
                 <option value="Maj PM">Maj PM</option>
@@ -30,8 +31,8 @@ function addRow() {
                 <option value="Sd PM">Sd PM</option>
             </select>
         </td>
-        <td><input type="text" class="re-input" placeholder="Digite RE"></td>
-        <td><input type="text" class="qra-input" placeholder="Digite QRA"></td>
-        <td><input type="text" class="funcao-input" placeholder="Digite Função"></td>
+        <td><input type="text" class="re-input" placeholder="RE"></td>
+        <td><input type="text" class="qra-input" placeholder="QRA"></td>
+        <td><input type="text" class="funcao-input" placeholder="Função"></td>
     `;
 }
