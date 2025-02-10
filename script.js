@@ -32,5 +32,6 @@ function addRow() {
         </td>
         <td><input type="text" class="re-input" placeholder="Digite RE"></td>
         <td><input type="text" class="qra-input" placeholder="Digite QRA"></td>
+        <td><input type="text" class="funcao-input" placeholder="Digite Função"></td>
     `;
 }
