@@ -80,10 +80,11 @@ button:hover {
 
     /* 🎨 Botão Vermelho no Mobile */
     button {
-        background: #dc3545; /* Vermelho */
+        background: #dc3545 !important; /* Vermelho */
     }
 
     button:hover {
-        background: #c82333;
+        background: #c82333 !important;
     }
 }
+
