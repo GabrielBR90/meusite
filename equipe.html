@@ -13,36 +13,55 @@
     </header>
 
     <main>
-        <table>
+        <table id="teamTable">
             <thead>
                 <tr>
-                    <th>Nome</th>
+                    <th>Guarnição</th>
                     <th>RE</th>
-                    <th>Viatura</th>
+                    <th>QRA</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>João Silva</td>
-                    <td>12345</td>
-                    <td>VTR-001</td>
-                </tr>
-                <tr>
-                    <td>Maria Souza</td>
-                    <td>67890</td>
-                    <td>VTR-002</td>
-                </tr>
-                <tr>
-                    <td>Carlos Lima</td>
-                    <td>11223</td>
-                    <td>VTR-003</td>
+                    <td>
+                        <select class="menu-suspenso">
+                            <option value="Cel PM">Cel PM</option>
+                            <option value="TenCel PM">TenCel PM</option>
+                            <option value="Maj PM">Maj PM</option>
+                            <option value="Cap PM">Cap PM</option>
+                            <option value="1º Ten PM">1º Ten PM</option>
+                            <option value="2º Ten PM">2º Ten PM</option>
+                            <option value="Asp Of PM">Asp Of PM</option>
+                            <option value="Al Of PM">Al Of PM</option>
+                            <option value="Al Ch PM">Al Ch PM</option>
+                            <option value="Subten PM">Subten PM</option>
+                            <option value="1º Sgt PM">1º Sgt PM</option>
+                            <option value="2º Sgt PM">2º Sgt PM</option>
+                            <option value="3º Sgt PM">3º Sgt PM</option>
+                            <option value="Cb PM">Cb PM</option>
+                            <option value="Sd PM">Sd PM</option>
+                        </select>
+                    </td>
+                    <td><input type="text" class="re-input" placeholder="Digite RE"></td>
+                    <td><input type="text" class="qra-input" placeholder="Digite QRA"></td>
                 </tr>
             </tbody>
         </table>
+
+        <button class="add-btn" onclick="addRow()">+ Adicionar Componentes</button>
+
+        <section class="info">
+            <p><strong>* MENU SUSPENSO:</strong> contém todas as patentes para seleção.</p>
+            <p><strong>* + ADICIONAR COMPONENTES:</strong> adiciona uma nova linha idêntica abaixo.</p>
+            <p><strong>* RE:</strong> campo de texto para entrada de dados.</p>
+            <p><strong>* QRA:</strong> campo de texto para entrada de dados.</p>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 - Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
