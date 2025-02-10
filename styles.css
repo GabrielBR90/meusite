@@ -135,7 +135,7 @@ main {
 
 /* Estilizando a tabela */
 table {
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
     border-collapse: collapse;
     background: white;
@@ -159,7 +159,7 @@ td {
     background: #f4f4f4;
 }
 
-/* Input e select formatados */
+/* Inputs e Selects */
 input, select {
     width: 100%;
     padding: 8px;
@@ -182,6 +182,14 @@ input, select {
 .add-btn:hover {
     background: #444;
 }
+
+/* Responsividade da tabela */
+@media (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+}
+
 
 /* Informações extras */
 .info {
