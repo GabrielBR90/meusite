@@ -141,10 +141,10 @@ input, select {
     color: #000;
 }
 
-/* BOTÕES QUADRADOS PRETOS (CORREÇÃO) */
+/* BOTÕES QUADRADOS PRETOS COM CANTOS ARREDONDADOS */
 .button-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 botões por linha */
+    grid-template-columns: repeat(3, 1fr); /* 3 botões por linha no desktop */
     gap: 20px; /* Espaço entre os botões */
     margin-top: 20px;
 }
@@ -171,13 +171,18 @@ input, select {
     background: #444; /* Cinza escuro no hover */
 }
 
-/* Responsividade */
+/* 📱 Ajustando para telas menores */
 @media (max-width: 600px) {
-    .planguarnicao, .planvtr {
-        width: 100%;
-    }
-
     .button-container {
         grid-template-columns: repeat(2, 1fr); /* 2 botões por linha no mobile */
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .square-btn {
+        width: 100px; /* Ajustando tamanho para telas menores */
+        height: 100px; /* Mantendo quadrado */
+        font-size: 14px; /* Texto um pouco menor para caber */
     }
 }
