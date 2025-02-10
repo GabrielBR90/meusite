@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     text-align: center;
-    background-color: #f4f4f4; /* Cor unificada para desktop e mobile */
+    background-color: #f4f4f4;
     color: #000;
 }
 
@@ -33,12 +33,12 @@ main {
     padding: 20px;
 }
 
-/* Tabelas */
+/* Planilhas */
 table {
     width: 90%;
     margin: 20px auto;
     border-collapse: collapse;
-    background: white; /* Fundo branco unificado */
+    background: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -49,7 +49,7 @@ th, td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: center;
-    color: #000; /* Texto sempre preto */
+    color: #000;
 }
 
 th {
@@ -110,27 +110,29 @@ input, select {
     text-align: left;
 }
 
-/* Estilos da Tabela de Operações */
-.operation-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+/* Planilhas Individuais */
+.planguarnicao,
+.planvtr {
+    width: 100%; /* Garantindo a mesma largura no mobile */
 }
 
-.operation-table th, .operation-table td {
+/* Estilos das Planilhas */
+.planguarnicao th, .planguarnicao td,
+.planvtr th, .planvtr td {
     border: 1px solid black;
     padding: 8px;
     text-align: center;
     color: #000;
 }
 
-.operation-table th {
+.planguarnicao th, .planvtr th {
     background-color: #f4f4f4;
     font-weight: bold;
 }
 
 /* Ajuste para os inputs */
-.operation-table input, .operation-table select {
+.planguarnicao input, .planguarnicao select,
+.planvtr input, .planvtr select {
     width: 100%;
     padding: 5px;
     border: 1px solid #ccc;
@@ -141,9 +143,10 @@ input, select {
 
 /* Responsividade */
 @media (max-width: 600px) {
-    table {
-        width: 100%;
+    .planguarnicao, .planvtr {
+        width: 100%; /* Tabelas sempre do mesmo tamanho no mobile */
     }
+}
 
     /* Mobile agora segue as mesmas cores do desktop */
     body {
