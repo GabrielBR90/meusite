@@ -13,10 +13,11 @@
     </header>
 
     <main>
+        <!-- Primeira Tabela -->
         <table id="teamTable">
             <thead>
                 <tr>
-                    <th>Post/Grad/th>
+                    <th>Post/Grad</th>
                     <th>RE</th>
                     <th>QRA</th>
                     <th>Função</th>
@@ -52,6 +53,43 @@
         </table>
 
         <button class="add-btn" onclick="addRow()">+ Adicionar Componentes</button>
+
+        <!-- Segunda Tabela -->
+        <div class="planilha-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Viatura</th>
+                        <th>Programa</th>
+                        <th>Modalidade</th>
+                        <th>Operação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" placeholder="Viatura"></td>
+                        <td><input type="text" placeholder="Programa"></td>
+                        <td><input type="text" placeholder="Modalidade"></td>
+                        <td><input type="text" placeholder="Operação"></td>
+                    </tr>
+                    <tr>
+                        <td>Viatura</td>
+                        <td>KM Inicial</td>
+                        <td>KM Final</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Hora Inicial</td>
+                        <td>Hora Final</td>
+                        <td colspan="2"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>* Programa:</strong> <span class="underline">Rádio Patrulha</span></p>
+            <p><strong>* Modalidade:</strong> <span class="underline">Supervisor Regional, Ações Especiais de Polícia, Atividade Delegada</span></p>
+            <p><strong>* Operação:</strong> <span class="underline">Policiamento Ostensivo Dinâmico, Atividade DEJEM</span></p>
+        </div>
     </main>
 
     <footer>
