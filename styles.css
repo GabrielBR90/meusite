@@ -113,7 +113,7 @@ input, select {
 /* Planilhas Individuais */
 .planguarnicao,
 .planvtr {
-    width: 100%; /* Garantindo a mesma largura no mobile */
+    width: 100%;
 }
 
 /* Estilos das Planilhas */
@@ -141,24 +141,43 @@ input, select {
     color: #000;
 }
 
+/* BOTÕES QUADRADOS PRETOS (CORREÇÃO) */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 botões por linha */
+    gap: 20px; /* Espaço entre os botões */
+    margin-top: 20px;
+}
+
+/* Botões quadrados pretos com cantos arredondados */
+.square-btn {
+    background: #000; /* Preto */
+    color: white; /* Texto branco */
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 25px; /* Cantos arredondados */
+    width: 120px; /* Largura fixa */
+    height: 120px; /* Altura fixa (quadrado) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.square-btn:hover {
+    background: #444; /* Cinza escuro no hover */
+}
+
 /* Responsividade */
 @media (max-width: 600px) {
     .planguarnicao, .planvtr {
-        width: 100%; /* Tabelas sempre do mesmo tamanho no mobile */
-    }
-}
-
-    /* Mobile agora segue as mesmas cores do desktop */
-    body {
-        background-color: #f4f4f4;
+        width: 100%;
     }
 
-    th, td, input, select {
-        color: #000;
-        background: white;
-    }
-
-    .operation-table {
-        font-size: 12px;
+    .button-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 botões por linha no mobile */
     }
 }
