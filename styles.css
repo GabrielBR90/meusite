@@ -5,28 +5,23 @@
     font-family: Arial, sans-serif;
 }
 
+/* Corpo da página */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     text-align: center;
+    background-color: #f4f4f4; /* Mantendo a cor igual em todas as telas */
 }
 
-/* 🖥️ Estilo para DESKTOP */
-.desktop {
-    display: block;
-}
-
-.mobile {
-    display: none; /* Oculto no desktop */
-}
-
+/* Cabeçalho */
 header {
     background: #333;
     color: white;
     padding: 15px;
 }
 
+/* Estrutura do conteúdo */
 main {
     flex: 1;
     display: flex;
@@ -35,7 +30,6 @@ main {
     padding: 20px;
 }
 
-/* Estilo do bloco de conteúdo */
 .content {
     background: white;
     padding: 20px;
@@ -60,25 +54,8 @@ button:hover {
     background: #218838;
 }
 
-/* 📱 Estilo para MOBILE */
+/* 📱 APENAS o botão muda no Mobile */
 @media (max-width: 600px) {
-    body {
-        background: #222; /* Fundo escuro no mobile */
-        color: white;
-    }
-
-    .desktop {
-        display: none; /* Oculto no mobile */
-    }
-
-    .mobile {
-        display: block; /* Exibido no mobile */
-        padding: 15px;
-        border-radius: 0;
-        width: 100%;
-    }
-
-    /* 🎨 Botão Vermelho no Mobile */
     button {
         background: #dc3545 !important; /* Vermelho */
     }
@@ -87,4 +64,3 @@ button:hover {
         background: #c82333 !important;
     }
 }
-
