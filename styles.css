@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     text-align: center;
-    background-color: #f4f4f4; /* Mantendo a cor igual em todas as telas */
+    background-color: #f4f4f4; /* Mesma cor para desktop e mobile */
 }
 
 /* Cabeçalho */
