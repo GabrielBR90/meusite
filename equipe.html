@@ -54,27 +54,43 @@
 
         <button class="add-btn" onclick="addRow()">+ Adicionar Componentes</button>
 
-        <!-- Segunda Tabela -->
+        <!-- Segunda Tabela (Formato do Print) -->
         <div class="planilha-container">
-            <table>
+            <table class="operation-table">
                 <thead>
                     <tr>
                         <th>Viatura</th>
-                        <th>Programa</th>
-                        <th>Modalidade</th>
-                        <th>Operação</th>
+                        <th>KM INICIAL</th>
+                        <th>KM FINAL</th>
+                        <th>HORA INICIAL</th>
+                        <th>HORA FINAL</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><input type="text" placeholder="Viatura"></td>
+                        <td rowspan="2"><input type="text" placeholder="Viatura"></td>
+                        <td rowspan="2"><input type="text" placeholder="KM Inicial"></td>
+                        <td rowspan="2"><input type="text" placeholder="KM Final"></td>
+                        <td rowspan="2"><input type="text" placeholder="Hora Inicial"></td>
+                        <td rowspan="2"><input type="text" placeholder="Hora Final"></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th>Programa</th>
+                        <th colspan="2">Modalidade</th>
+                        <th colspan="2">Operação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
                         <td>
                             <select>
                                 <option value="">----</option>
                                 <option value="Rádio Patrulha">Rádio Patrulha</option>
                             </select>
                         </td>
-                        <td>
+                        <td colspan="2">
                             <select>
                                 <option value="">----</option>
                                 <option value="SUPERVISOR REGIONAL">SUPERVISOR REGIONAL</option>
@@ -82,40 +98,29 @@
                                 <option value="ADMINISTRAÇÃO">ADMINISTRAÇÃO</option>
                                 <option value="APOIO ADM">APOIO ADM</option>
                                 <option value="ATIVIDADE DEJEM">ATIVIDADE DEJEM</option>
-                                <option value="ATIVIDADE DELEGADA">ATIVIDADE DELEGADA</option>
                                 <option value="BASE COMUNITÁRIA DE SEGURANÇA">BASE COMUNITÁRIA DE SEGURANÇA</option>
-                                <option value="BASE COMUNITÁRIA MÓVEL">BASE COMUNITÁRIA MÓVEL</option>
-                                <option value="RÁDIO PATRULHAMENTO">RÁDIO PATRULHAMENTO</option>
-                                <option value="SERVIÇO DE DIA">SERVIÇO DE DIA</option>
-                                <option value="VIATURAS AÉREAS">VIATURAS AÉREAS</option>
                             </select>
                         </td>
-                        <td>
+                        <td colspan="2">
                             <select>
                                 <option value="">----</option>
                                 <option value="POLICIAMENTO OSTENSIVO ORDINÁRIO">POLICIAMENTO OSTENSIVO ORDINÁRIO</option>
                                 <option value="ATIVIDADE DEJEM">ATIVIDADE DEJEM</option>
                                 <option value="ATIVIDADE DELEGADA">ATIVIDADE DELEGADA</option>
                                 <option value="AÇÃO INTEGRADA">AÇÃO INTEGRADA</option>
-                                <option value="CENTRO LEGAL">CENTRO LEGAL</option>
-                                <option value="ESCOLTA DE PRESO">ESCOLTA DE PRESO</option>
-                                <option value="ESCOLTA PESSOAL/PATRIMONIAL">ESCOLTA PESSOAL/PATRIMONIAL</option>
                                 <option value="OPERAÇÃO DE TRÂNSITO">OPERAÇÃO DE TRÂNSITO</option>
-                                <option value="OPERAÇÃO EVENTOS">OPERAÇÃO EVENTOS</option>
-                                <option value="OPERAÇÃO REVEILLON">OPERAÇÃO REVEILLON</option>
                             </select>
                         </td>
                     </tr>
+                </tbody>
+                <thead>
                     <tr>
-                        <td>Viatura</td>
-                        <td>KM Inicial</td>
-                        <td>KM Final</td>
-                        <td>Data</td>
+                        <th colspan="5">DATA</th>
                     </tr>
+                </thead>
+                <tbody>
                     <tr>
-                        <td>Hora Inicial</td>
-                        <td>Hora Final</td>
-                        <td colspan="2"></td>
+                        <td colspan="5"><input type="date"></td>
                     </tr>
                 </tbody>
             </table>
