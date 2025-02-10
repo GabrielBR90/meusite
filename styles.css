@@ -12,14 +12,32 @@ body {
     flex-direction: column;
     min-height: 100vh;
     text-align: center;
-    background-color: #f4f4f4; /* Mantendo fundo cinza claro */
+    background-color: #f4f4f4; /* Fundo cinza claro */
 }
 
 /* Cabeçalho */
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
     background: #333;
     color: white;
-    padding: 15px;
+    width: 100%;
+}
+
+/* Botão de voltar */
+.back-btn {
+    background: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.back-btn:hover {
+    background: #444;
 }
 
 /* Estrutura do conteúdo */
@@ -62,9 +80,39 @@ main {
     background: #444; /* Cinza escuro no hover */
 }
 
-/* 📱 Ajustando para telas menores */
+/* Estilizando a tabela */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #000;
+    color: white;
+}
+
+td {
+    background: #f4f4f4;
+}
+
+/* 📱 Responsividade */
 @media (max-width: 600px) {
     .button-container {
         grid-template-columns: repeat(2, 1fr); /* 2 botões por linha no mobile */
+    }
+
+    table {
+        width: 95%;
     }
 }
